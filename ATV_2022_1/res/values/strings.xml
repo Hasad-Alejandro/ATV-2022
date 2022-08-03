@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ATV-2021-1</string>
+    <string name="BotonSiguiente">siguiente</string>
+    <string name="tv1">primer vistazo</string>
+    <string name="BotonAnterior">anterior</string>
+    <string name="tv2">segundo vistazo</string>
+</resources>
