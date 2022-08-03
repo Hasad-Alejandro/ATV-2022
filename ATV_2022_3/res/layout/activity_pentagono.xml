@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pentagono">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toTopOf="@+id/apo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pentagono" />
+
+    <Button
+        android:id="@+id/cac"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="57dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/perimetro1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ld" />
+
+    <TextView
+        android:id="@+id/Rperi"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="82dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/perimetro1"
+        app:layout_constraintTop_toTopOf="@+id/perimetro1" />
+
+    <TextView
+        android:id="@+id/Rarr"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="77dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Area"
+        app:layout_constraintTop_toTopOf="@+id/Rperi" />
+
+    <TextView
+        android:id="@+id/Area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="119dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Rarr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perimetro1" />
+
+    <EditText
+        android:id="@+id/Ld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/cac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/apo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Lado"
+        app:layout_constraintBottom_toTopOf="@+id/cac"
+        app:layout_constraintEnd_toStartOf="@+id/Ld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/perimetro1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Perimetro"
+        app:layout_constraintBottom_toTopOf="@+id/Area"
+        app:layout_constraintEnd_toStartOf="@+id/Rperi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cac" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Apotema"
+        app:layout_constraintBottom_toBottomOf="@+id/apo"
+        app:layout_constraintEnd_toStartOf="@+id/apo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/apo" />
+
+    <EditText
+        android:id="@+id/apo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/Ld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
