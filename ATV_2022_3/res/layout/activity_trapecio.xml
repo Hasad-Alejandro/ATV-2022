@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".trapecio">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="272dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Basema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/trapecio" />
+
+    <Button
+        android:id="@+id/cac"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="34dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/perimetro1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ld"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Ld"
+        android:layout_width="163dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/alu"
+        app:layout_constraintTop_toBottomOf="@+id/alu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="44dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Lado"
+        app:layout_constraintBottom_toTopOf="@+id/cac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Rperi"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="39dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Area"
+        app:layout_constraintEnd_toEndOf="@+id/Ld"
+        app:layout_constraintStart_toStartOf="@+id/Ld"
+        app:layout_constraintTop_toBottomOf="@+id/cac" />
+
+    <TextView
+        android:id="@+id/Area"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Rarr"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Rarr"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="29dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Area"
+        app:layout_constraintTop_toBottomOf="@+id/Rperi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/perimetro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="118dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Perimetro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ld"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Basema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Base mayor"
+        app:layout_constraintEnd_toStartOf="@+id/Bas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Base menor"
+        app:layout_constraintEnd_toStartOf="@+id/bm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Basema" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Altura"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/Bas"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Basema"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/bm"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/Bas" />
+
+    <EditText
+        android:id="@+id/alu"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/bm"
+        app:layout_constraintTop_toBottomOf="@+id/bm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
