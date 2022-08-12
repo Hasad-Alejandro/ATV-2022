@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ATV_2022_10</string>
+    <string name="Nombre1">NOMBRE</string>
+    <string name="Nombre2">NOMBRE</string>
+    <string name="Numero1">NUMERO</string>
+    <string name="Numero2">NUMERO</string>
+    <string name="Numero3">NUMERO</string>
+    <string name="Numero4">NUMERO</string>
+    <string name="Numero5">NUMERO</string>
+    <string name="BtEnviar">ENVIAR</string>
+    <string name="BtRegresar">REGRESAR</string>
+</resources>
